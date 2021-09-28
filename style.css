@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#E6EFF6;
+    padding: 60px 13px;
+}
+.container {
+    max-width: 650px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+}
+.container .content-1,
+.container .content-2,
+.container .content-3 {
+    padding: 2.5rem 2rem;
+}
+.container .content-1 {
+    grid-column: span 4;
+}
+.container .content-1 h3 {
+    color: #5EAFB0;
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+.container .content-1 h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color:  hsl(71, 73%, 54%);
+}
+.container .content-1 p {
+    max-width: 550px;
+    line-height: 1.8;
+    color: hsl(218, 22%, 67%);
+    font-size: 1rem;
+}
+.container .content-2 {
+    grid-column: span 2;
+    border-bottom-left-radius: 10px;
+    background-color: #2BB3B1;
+}
+.container .content-2 h3 {
+    color: #fff;
+    margin-bottom: 1.2rem;
+}
+.container .content-2 h4 {
+    font-size: 2rem;
+    color: #fff;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.container .content-2 h4 > span {
+    font-size: 1rem;
+    font-weight: normal;
+    color:#5CD3D2;
+    position: absolute;
+    transform: translateY(-50%);
+    margin-left:10px;
+    top: 50%;
+}
+.container .content-2 p {
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 1.3rem;
+}
+.container .content-2 button {
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1rem;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #BFDF32;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .2s all;
+    border: 1px solid transparent;
+}
+.container .content-2 button:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #BFDF32;
+}
+.container .content-3 {
+    grid-column: span 2;
+    border-bottom-right-radius: 10px;
+    background-color: #4ABEBD;
+}
+.container .content-3 h3 {
+    color: #fff;
+    margin-bottom: 1.2rem;
+}
+.container .content-3 p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-weight: normal;
+    max-width: 255px;
+}
+@media (max-width:646px) {
+    .container .content-2,
+    .container .content-3 {
+        grid-column: span 4;
+    }
+    .content-2 {
+        border-bottom-left-radius: 0 !important;
+    }
+    .content-3 {
+        border-bottom-left-radius: 10px;
+    }
+    .container .content-2 p {
+        margin-bottom: 2rem;
+    }
+}
